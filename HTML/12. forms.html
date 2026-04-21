@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TAGS and ATTRIBUTES -->
+     <!-- <fieldset></fieldset>: its used to give a full outwer field box to the form content -->
+     <fieldset> 
+        <legend>Example form</legend>
+         <!-- <form></form>: its a tag which is  mandatory for creating forms -->
+          <!-- action="" inside action specify the html file which should be open when press submit/ or any button. the file will work if any action is performed (need extra info about will it work if its reset or anyything)-->
+         <form action="./12.1 formResult.html">
+
+            <!-- <label><label>: for giving text/label in the form as given below -->
+            <label>Name</label>
+            <!-- <input>: for getting the input field to enter the data -->
+            <!-- type: type is an attribute to specify what type are we expecting in input -->
+            <!-- required attribute will make the input mandatory (sup * for standard)-->
+            <input type="" required placeholder="Enter your Name"><sup>*</sup>
+
+            <!-- label and input tags are inline level elements so br for newline :) -->
+            <br><br>
+            <label>email.</label>
+            <input required type="email" placeholder="Enter your email ID"><sup>*</sup>
+
+            <br><br>
+            <label>Password.</label>
+            <!-- the password type will show the passwor das disc inorder for privacy. We can give max length and min length of pwd as below-->
+            <input required type="password" maxlength="16" minlength="8" placeholder="Enter your password"><sup>*</sup>
+
+            <br><br>
+            <label>Select Your Gender</label>
+            <input type="radio" name="a"><label >Male</label>
+            <input type="radio" name="a"><label >Female</label>
+            <input type="radio" name="a"><label >Others</label>
+
+            <br><br>
+            <label>Select your skills</label>
+            <br><br>
+            <!-- checked: is an attribute to make it checked as default -->
+            <input type="checkbox" checked><label>Skill 1</label>
+            <br><br>
+            <input type="checkbox"><label>Skill 2</label>
+            <br><br>
+            <input type="checkbox"><label>Skill 3</label>
+            <br><br>
+            <input type="checkbox"><label>Skill 4</label>
+            <br><br>
+            <input type="checkbox"><label>Skill 5</label>
+
+            <br><br>
+            <label>Age</label>
+            <input type="number" placeholder="age" min="18" max="35">
+
+            <br><br>
+            <label>date of birth</label>
+            <!-- min and max fro date should be yyyy-mm-dd -->
+            <input type="date" max="2006-01-01" min="1990-01-01">
+
+            <br><br>
+            <label>Phone.No</label>
+            <!-- pattern: its an attribute to define the pattern of input [range]{no of digits} -->
+            <input type="tel" placeholder="Enter your Phone.No" pattern="[6-9]{1}[0-9]{9}">
+
+            <br><br>
+            <label>Address</label>
+            <!-- cols and rows: it helps to increase the widht and height of the text area without using the style width and height -->
+             <!-- <textarea> is used for a more free sapce for input for ex for address-->
+            <textarea placeholder="Enter you address" cols="8" rows="3"></textarea>
+
+            <!-- Drop down -->
+            <br><br>
+            <label for="">select your state</label>
+            <!-- select tag is used for the drop down and <option> used for the options shown in the drop down -->
+            <select name="" id="">
+                <option value="">Kerala</option>
+                <option value="">Goa</option>
+                <!-- same as checked selected attrbiute make it diffault selected option -->
+                <option value="" selected>Karnataka</option>
+            </select>
+             
+            <!-- some other type examples -->
+            <input type="color">
+            <input type="range" name="" id="">
+            <input type="search">
+
+            <br><br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+
+
+            
+         </form>
+     </fieldset>
+</body>
+</html>
+
+<!-- not on checkbox and radio
+ Radio
+ radio is standard for choosing single option
+ default is choosign multi option
+ by attrbute 'name' and assigning them all same value we can make it to choose single option only
+ if we give different values it will still choose multi option as default 
+ CHECKBOX
+ check box is standard for choosign multi option
+ default is choosign multi option
+ Even if we choose the name attribute to be different value or same value it will still choose multi option
+ -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table Attributes</h1>
+        <!-- border: is used to give border to invidual cells 
+             Syntax: border = 'value'-->
+        <!-- cellspacing: used to give space around the cell -->
+        <!-- cellpadding: used to give space between the content and the border of the cell -->
+        <h2>Border cellspacing and cellpadding</h2>
+        <h3>html4 format</h3>
+        <table border="2px" cellspacing="50px" cellpadding="50px">
+            <tr>
+                <th>Non standard form in html5</th>
+                <td>with border = 2px</td>
+                <td>cellspacing of 50 px</td>
+                <td>cellpadding of 50 px</td>
+            </tr>
+        </table>
+        <h3>html5 Standard format</h3>
+        <!-- the above format of using cellspacing and cellpadding was standard in html4 -->
+        <!-- the standard format in html5 -->
+         <table border="2px" style="border-spacing: 50px;">
+            <tr>
+                <th style="padding: 50px;">Standard form in html5</th>
+                <td style="padding: 50px;">with border = 2px</td>
+                <td style="padding: 50px;">cellspacing of 50 px</td>
+                <td style="padding: 50px;">cellpadding of 50 px</td>
+            </tr>
+         </table>
+
+         <h2>Rawspan and Colspans</h2>
+         <!-- rawspan: to merge cells vertically -->
+          <!-- colspan to merge cells horizontally -->
+         <table border="2px" cellpadding="50px">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+         </table>
+         <!-- methods to merge teh borders into a single border -->
+         <h2>Merging the Border</h2>
+         <h3>Method 1: rules='all'</h3>
+        <table border="2px" cellpadding="50px" rules="all">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+         </table>
+
+         <h3>Method 2: border-collapse</h3>
+        <table border="2px" cellpadding="50px" style="border-collapse: collapse;">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+         </table>
+         <h3>Method 3: By adjusting cellspacing</h3>
+        <table border="2px" cellpadding="50px" cellspacing="0px">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+        </table>
+         <!-- even though all the 3 method looks same output, ZOOMIN u can see the difference -->
+
+         <!-- other attributes : style
+                                 title -->
+        <h2>title attribute</h2>
+        <table title="using title" border="2px" cellpadding="50px" cellspacing="0px">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+        </table>
+</body>
+</html>

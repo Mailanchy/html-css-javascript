@@ -1,0 +1,13 @@
+Attributes:
+    they are key and value pair
+    they are used to give extra features/information to the html tags.
+    they are always defined in the opening tags. 
+    2 types of attributes
+        1. Local attributes [Element sepcific attributes]: the attributes which are specific to the tags 
+            eg. alt(only for <img>), scrollamount(only for <marquee>), etc.
+        2. Global attributes: they can be used in all the tags available in html
+            eg. style, height, width, title, id, class
+
+
+
+
